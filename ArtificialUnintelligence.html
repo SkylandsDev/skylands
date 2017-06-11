@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" type="image/png" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="assets/style.css">
+<style>
+
+</style>
+<title>Skylands</title>
+</head>
+<body>
+
+<h1 class=banner><img src="logo.png" alt="" /></h1>
+<div class=menubar>
+<a class=button href="skylandsHome.html">Home</a>
+<a class=button href="art.html">Art</a>
+<a class=button href="updates.html">Project Updates</a>
+<a class=button href="games.html">Games</a>
+<a class=button href="skylandsGame.html">JS Prototype</a>
+<div class=dropdown>
+<button class=button>More</button>
+<div class=dropdown-content>
+<p><a class=button2>Contact us</a></p>
+<p><a class=button2>Blog</a></p>
+<p><a class=button2 href="https://scratch.mit.edu" target="_blank">Go to Scratch</a></p>
+<p><a class=button2 href="members.html">Current Members</a></p>
+</div>
+</div>
+<a class=button href="https://scratch.mit.edu/studios/3437909/projects/" target="_blank">Skylands Scratch Studio</a>
+</div>
+
+<script>
+Chat = [];
+Database = [];
+Responses = [];
+Ask = [];
+Last_reply = "";
+NewPhrases = 0;
+Phraseslearned = 24;
+Database.push(('I have learnt ' + (NewPhrases + ' phrases from you so far.')));
+Responses.push(('Hey, I\'ve only learnt ' + (Phraseslearned + ' phrases...')));
+Database.push('Interesting...');
+Database.push('Right.');
+Database.push('No way!');
+Database.push('That isn\'t true.');
+Database.push('It isn\'t possible!');
+Database.push('Agreed.');
+Database.push('Hmmm...');
+Database.push('Haha!');
+Responses.push('I\'m not sure...');
+Responses.push('42, It\'s the answer to everything!');
+Responses.push('I\'ll get back to you on that one...');
+Responses.push('Well, from my perspective, 00110100 00110010!');
+Responses.push('Why do you ask that?');
+Responses.push('What do you think?');
+Ask.push('So, what would you like to talk about?');
+Ask.push('So, What have you been programming recently?');
+Ask.push('So, what are some things you like to do?');
+Chat.push('Hi.')
+answer = prompt(Chat[Chat.length - 1]);
+Database.push(answer);
+Phraseslearned += 1;
+NewPhrases += 1;
+Database[1] = ('I have learnt ' + (NewPhrases + ' phrases from you so far.'));
+Responses[1] = ('Hey, I\'ve only learnt ' + (Phraseslearned + ' phrases...'));
+Chat.push('My name is the A.U. aka the Artificial Unintelligence.\nHowever I am actually very intelligent.\n' + Ask[1 - 1]);
+answer = prompt(Chat[Chat.length - 1]);
+Responses.push(answer);
+Phraseslearned += 1;
+NewPhrases += 1;
+Database[1] = ('I have learnt ' + (NewPhrases + ' phrases from you so far.'));
+Responses[1] = ('Hey, I\'ve only learnt ' + (Phraseslearned + ' phrases...'));
+Chat.push(Database[(Math.floor(Math.random() * Database.length) + 1) - 1]);
+while ((!(((answer === 'Bye') || (answer === 'Bye!')) || (((answer === 'Goodbye') || (answer === 'Goodbye!')) || ((answer === 'Go away!') || (answer === 'Go away')))))) {
+    if ((Last_reply === '?')) {
+        answer = prompt(Chat[Chat.length - 1]);
+        Chat.push(answer);
+        Database.push(answer);
+        Phraseslearned += 1;
+        NewPhrases += 1;        Database[1] = ('I have learnt ' + (NewPhrases + ' phrases from you so far.'));
+        Responses[1] = ('Hey, I\'ve only learnt ' + (Phraseslearned + ' phrases...'));
+    } else {
+        answer = prompt(Chat[Chat.length - 1]);
+        Chat.push(answer);
+        Responses.push(answer);
+        Phraseslearned += 1;
+        NewPhrases += 1;
+        NewPhrases += 1;
+        Database[1] = ('I have learnt ' + (NewPhrases + ' phrases from you so far.'));
+        Responses[1] = ('Hey, I\'ve only learnt ' + (Phraseslearned + ' phrases...'));
+    }
+    if ((answer[(answer.length) - 1] === '?')) {
+        Chat.push(Responses[(Math.floor(Math.random() * Database.length) + 1) - 1 - 1]);
+        Last_reply = 'S';
+    } else {
+        if (((Math.floor(Math.random() * 15) + 1) === 1)) {
+            Chat.push(Ask[(Math.floor(Math.random() * Database.length) + 1) - 1]);
+            Last_reply = '?';
+        } else {
+            Chat.push(Database[(Math.floor(Math.random() * Database.length) + 1) - 1]);
+            Last_reply = 'S';
+        }
+    }
+}
+
+</script>
+
+</body>
+</html>
