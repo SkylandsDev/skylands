@@ -2,141 +2,20 @@
 <html>
 <head>
 <link rel="shortcut icon" type="image/png" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="assets/style.css">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
   <style>
-.banner {
-    /*background-color: rgb(225, 230, 255);*/
-    background-image: url("backgr.png");
-    background-repeat: repeat-x;
-}
-
-.menubar {
-    background-color: rgb(25, 116, 183);
-    height: 44px;
-}
-
-h1 {
-    color: white;
-    text-align: center;
-}
-
-p {
-    font-family: verdana;
-    font-size: 20px;
-}
-
-.button, .button:link, .button:visited {
-    color: rgb(255, 160, 0);
-    margin: 4px 15px;
-    padding: 4px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-family: verdana;
-    font-size: 20px;
-    border-style: outset;
-    border-width: 2px;
-    border-color: gray;
-    background-color: rgb(245, 245, 245);
-    border-radius: 10px;
-    box-shadow: 1px 1px rgb(10, 10, 10);
-    transition: color 0.5s;
-    transition: background-color 0.5s;
-
-}
-
-
-.button:hover, .button:active {
-    color: rgb(245, 245, 245);
-    background-color: rgb(255, 160, 0);
-}
-
-.button:active {
-    border-style: inset;
-}
-
-.imgleft {
-    float: left;
-    margin: 0px 10px 0px 0px;
-}
-
-.hometext {
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    font-size: 30px;
-    color: rgb(100, 100, 100);
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: rgb(20, 111, 178);
-    min-width: 160px;
-    box-shadow: 8px 8px 8px rgba(0,0,0,0.8);
-    padding: 0px 16px;
-    z-index: 1;
-    border-radius: 10px;
-    border-color: gray;
-    border-width: 2px;
-    color: rgb(255, 160, 0);
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-
-.button2, .button2:link, .button2:visited {
-    color: rgb(255, 160, 0);
-    margin: 0px 15px;
-    padding: 2px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-family: verdana;
-    font-size: 20px;
-    border-style: outset;
-    border-width: 2px;
-    border-color: gray;
-    background-color: rgb(245, 245, 245);
-    border-radius: 10px;
-    box-shadow: 1px 1px rgb(10, 10, 10);
-    transition: color 0.5s;
-    transition: background-color 0.5s;
-    min-width: 160px;
-}
-
-
-.button2:hover, .button2:active {
-    color: rgb(245, 245, 245);
-    background-color: rgb(255, 160, 0);
-}
 
   </style>
 <title>Skylands</title>
 </head>
 <body>
-<h1 class=banner><img src="logo.png" alt="" /></h1>
-<div class=menubar>
-<a class=button href="skylandsHome.html">Home</a>
-<a class=button href="art.html">Art</a>
-<a class=button href="updates.html">Project Updates</a>
-<a class=button href="games.html">Games</a>
-<a class=button href="skylandsGame.html">JS Prototype</a>
-<div class=dropdown>
-<button class=button>More</button>
-<div class=dropdown-content>
-<p><a class=button2>Contact us</a></p>
-<p><a class=button2>Blog</a></p>
-<p><a class=button2 href="https://scratch.mit.edu" target="_blank">Go to Scratch</a></p>
-<p><a class=button2 href="members.html">Current Members</a></p>
-</div>
-</div>
-<a class=button href="https://scratch.mit.edu/studios/3437909/projects/" target="_blank">Skylands Scratch Studio</a>
-</div>
+
+<div w3-include-html="menu.html"></div> 
+
+<script>
+w3.includeHTML();
+</script>
 
 </body>
 </html>
