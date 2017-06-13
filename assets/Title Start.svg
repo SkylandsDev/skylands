@@ -40,7 +40,7 @@
      showgrid="false"
      inkscape:zoom="3.2561405"
      inkscape:cx="151.02353"
-     inkscape:cy="98.185939"
+     inkscape:cy="110.47042"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -115,16 +115,24 @@
   </g>
   <text
      id="ID0.1717975432984531"
-     x="-6.5039659"
-     y="108.94833"
+     x="1.4809476"
+     y="109.56256"
      font-size="22"
-     style="font-size:43.89684677px;font-family:Gloria;text-anchor:start;fill:#666666;stroke-width:1.99531126">Skylands</text>
+     style="font-size:43.89684677px;font-family:Gloria;text-anchor:start;fill:#666666;stroke-width:1.99531126">
+    <tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS'"
+       id="tspan47">Skylands</tspan>
+  </text>
   <text
      id="ID0.7356719826348126"
-     x="29.395657"
-     y="128.89124"
+     x="35.845009"
+     y="131.04102"
      font-size="22"
-     style="font-size:13.63433266px;font-family:Gloria;text-anchor:start;fill:#7f7f7f;stroke-width:0.61974239">Worlds from above</text>
+     style="font-size:13.63433266px;font-family:Gloria;text-anchor:start;fill:#7f7f7f;stroke-width:0.61974239">
+    <tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS'"
+       id="tspan49">Worlds from above</tspan>
+  </text>
   <path
      style="fill:#ffffff;stroke:none;stroke-linecap:round"
      inkscape:connector-curvature="0"
