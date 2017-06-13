@@ -114,3 +114,19 @@ p {
     padding: 0px;
     margin-bottom: 0px;
 }
+
+.gamestext {
+    font-family: verdana;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    background-color: rgb(255, 160, 0);
+    font-weight: bold;
+    padding: 15px 15px;
+    margin: 0px 50px;
+}
+
+.embeds{
+    display: block;
+    margin: auto;
+}

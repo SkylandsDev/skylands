@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="400.20583"
-     inkscape:cy="559.65687"
+     inkscape:cx="830.60154"
+     inkscape:cy="263.6405"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -35,7 +35,8 @@
      inkscape:window-height="705"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     inkscape:snap-global="false" />
   <metadata
      id="metadata112">
     <rdf:RDF>
@@ -44,7 +45,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -53,8 +54,8 @@
      inkscape:groupmode="layer"
      id="layer1">
     <path
-       style="fill:#4d8200;fill-opacity:1;stroke-width:0.26458332"
-       d="m -299.35715,164.70834 c 35.43527,0 73.89434,-7.55952 109.32961,-7.55952 35.43527,0 75.40625,6.04762 110.841519,6.04762 35.435267,0 77.6741067,5.29166 113.109374,5.29166 35.435267,0 62.555059,-8.31547 97.990327,-8.31547 35.43527,0 76.1622,-2.26786 111.59747,-2.26786 35.43526,0 74.65029,8.31547 110.08556,8.31547 35.43526,0 58.77529,-6.04761 94.21056,-6.04761 35.43527,0 67.84672,4.53571 103.28199,4.53571 v 34.01785 h -850.44641 z"
+       style="fill:#4d8200;fill-opacity:1;stroke-width:0.10324629"
+       d="m -57.452388,176.72966 c 13.82763,0 28.83521,-2.94989 42.66284,-2.94989 13.82762978,0 29.4252,2.35992 43.25282,2.35992 13.82763,0 30.31017,2.06492 44.13779,2.06492 13.82763,0 24.41038,-3.24488 38.238008,-3.24488 13.82763,0 29.72018,-0.88497 43.54781,-0.88497 13.82762,0 29.1302,3.24488 42.95783,3.24488 13.82762,0 22.93542,-2.35991 36.76305,-2.35991 13.82763,0 26.4753,1.76993 40.30293,1.76993 V 304.37158 H -57.452388 Z"
        id="rect117"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccccccccc" />
