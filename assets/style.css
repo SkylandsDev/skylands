@@ -1,19 +1,13 @@
 .banner {
     background-image: url("backgr.png");
     background-repeat: repeat-x;
+	height: 100%;
 }
 .menubar {
     background-color: rgb(25, 116, 183);
     height: 100%;
 }
-h1 {
-    color: white;
-    text-align: center;
-}
-p {
-    font-family: verdana;
-    font-size: 20px;
-}
+
 .button, .button:link, .button:visited {
     color: rgb(255, 160, 0);
     margin: 4px 15px;
@@ -21,7 +15,6 @@ p {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-family: verdana;
     font-size: 20px;
     border-style: outset;
     border-width: 2px;
@@ -100,10 +93,12 @@ p {
     display: table;
 }
 .menu {
-    width: 25%;
+    width: 10%;
+	height: 10%;
 }
 .content {
-    width: 75%;
+    width: 55%;
+	height: 10%;
 }
 .menu ul {
     list-style-type: none;
@@ -126,7 +121,56 @@ p {
     margin: 0px 50px;
 }
 
+.userimg {
+	height: 100px;
+}
+
 .embeds{
     display: block;
     margin: auto;
+}
+
+.headback {
+	color: rgb(0, 0, 0);
+	text-align: center;
+	background-color: #0592ce;
+	margin: 0px 0px;
+}
+	
+.head1 {
+	color: rgb(245, 245, 245);
+    margin: 4px 4px;
+    padding: 4px 4px;
+	width: 95%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    border-style: outset;
+    border-width: 2px;
+    border-color: gray;
+    background-color: orange;
+    border-radius: 10px;
+    box-shadow: 1px 1px rgb(10, 10, 10);
+}
+
+.imgleft {
+    float: left;
+    margin: 0px 10px 0px 0px;
+	min-width: 100%;
+	max-width: 100%;
+}
+
+.imgframe {
+    float: left;
+    margin: 0px 10px 0px 0px;
+	min-width: 40%;
+	max-width: 40%;
+	height: calc(30px * 15);
+}
+
+.hometext {
+    font-size: 30px;
+    color: rgb(100, 100, 100);
+	margin: 0px 0px;
 }
