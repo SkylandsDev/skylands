@@ -18,7 +18,20 @@ let page_home = page_base + `
 <div class=imgframe>
 <img class=imgleft src="logo.png">
 </div>
-<p class=hometext>Welcome to the Skylands website! We are a <a style="color: rgb(100, 100, 100);" href="https://scratch.mit.edu" target="_blank">Scratch</a> group working on a game called "Skylands" (not affiliated with Skylanders <i>in any way</i>). We are an international collaborative team with members from all over the world, including Australia, New Zealand, Sweden, and the United States.</p>
+<p class=hometext>Welcome to the Skylands website! We are a <a style="color: rgb(100, 100, 100);" href="https://scratch.mit.edu" target="_blank">Scratch</a> group working on a game called "Skylands" (not affiliated with Skylanders <i>in any way</i>). We are an international collaborative team with members from all over the world, including New Zealand, Sweden, and the United States.</p>
+</div>
+
+</body>
+</html>
+`;
+let page_about = page_base + `
+<h1 class=head1>About</h1>
+</div>
+<div>
+<div class=imgframe>
+<img class=imgleft src="logo.png">
+</div>
+<p class=hometext></p>
 </div>
 
 </body>

@@ -1,0 +1,110 @@
+<head>
+<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+<title>Skylands WFA</title>
+<style>
+  body {
+    margin: 0;
+	font-family: 'scratchfont';
+  }
+  ul.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #0592ce;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+  }
+  li a {
+    display: block;
+    color: #ffffff;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  li a.active {
+    background-color: orange;
+    color: white;
+  }
+  li a:hover:not(.active) {
+    background-color: darkorange;
+    color: white;
+  }
+  div.hide {
+    position: fixed;
+    top: calc(50% - 40px);
+    left: 25%;
+    padding: 0;
+    height: 80px;
+    width: 20px;
+    margin: 0;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+  }
+</style>
+</head>
+<body onchange="" onload="update()">
+  <ul class="navigation" onchange="" id="ul" title="navigation bar">
+    <li><a title="link to home" href="#Home" id="Home" onclick="update('Home')">Home</a></li>
+    <li><a title="link to news" href="#News" id="News" onclick="update('News')">News</a></li>
+    <li><a title="link to contact" href="#Contact" id="Contact" onclick="update('Contact')">Contact</a></li>
+    <li><a title="link to about" href="#About" id="About" onclick="update('About')">About</a></li>
+  </ul>
+  <div>
+    <div style="margin-left:25%;padding:1px 16px;" id="main"><h1>Home</h1></div>
+    <div class="hide"id="hide" onclick="hide()" title="hide the navigation bar"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="30px" height="80px" viewBox="0 0 30 80" enable-background="new 0 65.326 612 502.174"
+	 xml:space="preserve"><path fill="#0f8bc0" d="M 0 0 L 30 10 L 30 70 L 0 80 z"/>
+     <path fill="#0592ce" stroke="none" d ="M 0 10 L 20 16 L 20 64 L 0 70 z">
+</svg>
+</div>
+    <script>
+      var shown = true;
+      function hide() {
+        var width = screen.availWidth * -0.25;
+        if (shown) {
+          document.getElementById("ul").style = "list-style-type: none;margin: 0;padding: 0;width: 25%;background-color: #0592ce;position: fixed;height: 100%;overflow: auto;-webkit-transition: 1s ease-in-out;-moz-transition: 1s ease-in-out;-o-transition: 1s ease-in-out;transition: 1s ease-in-out;-webkit-transform: translate(" + width + "px,0);-moz-transform: translate(" + width + "px,0);-o-transform: translate(" + width + "px,0);-ms-transform: translate(" + width + "px,0);transform: translate(" +  + "px,0);";
+          document.getElementById("hide").style = "position: fixed;top: calc(50% - 40px);left: 25%;padding: 0;height: 0px;width: 0px;margin: 0;-webkit-transition: 1s ease-in-out;-moz-transition: 1s ease-in-out;-o-transition: 1s ease-in-out;transition: 1s ease-in-out;-webkit-transform: translate(" + width + "px,0);-moz-transform: translate(" + width + "px,0);-o-transform: translate(" + width + "px,0);-ms-transform: translate(" + width + "px,0);transform: translate(" +  + "px,0);";
+          document.getElementById("main").style = "margin-left:25%;padding:1px 16px;margin-left:25%;padding:1px 16px;-webkit-transition: 1s ease-in-out;-moz-transition: 1s ease-in-out;-o-transition: 1s ease-in-out;transition: 1s ease-in-out;-webkit-transform: translate(" + width + "px,0);-moz-transform: translate(" + width + "px,0);-o-transform: translate(" + width + "px,0);-ms-transform: translate(" + width + "px,0);transform: translate(" +  + "px,0);";
+          shown = false;
+          document.getElementById("hide").title= "show the navigation bar";
+        } else {
+          document.getElementById("ul").style = "list-style-type: none;margin: 0;padding: 0;width: 25%;background-color: #0592ce;position: fixed;height: 100%;overflow: auto;-webkit-transition: 1s ease-in-out;-moz-transition: 1s ease-in-out;-o-transition: 1s ease-in-out;transition: 1s ease-in-out;";
+          document.getElementById("hide").style = "position: fixed;top: calc(50% - 40px);left: 25%;padding: 0;height: 0px;width: 0px;margin: 0;-webkit-transition: 1s ease-in-out;-moz-transition: 1s ease-in-out;-o-transition: 1s ease-in-out;transition: 1s ease-in-out;";
+          document.getElementById("main").style = "margin-left:25%;padding:1px 16px;margin-left:25%;padding:1px 16px;-webkit-transition: 1s ease-in-out;-moz-transition: 1s ease-in-out;-o-transition: 1s ease-in-out;transition: 1s ease-in-out;";
+          shown = true;
+          document.getElementById("hide").title= "hide the navigation bar";
+        }
+      }
+      function update(page) {
+        var pages = ["Home", "News", "Contact", "About"]
+        var pages_html = {"Home": "<h1>Home</h1>", "News": "<h1>News</h1>", "Contact": "<h1>Contacts</h1>", "About": "<h1>About</h1>"}
+        for (var i = 0; i < pages.length; i++) {
+          document.getElementById(pages[i]).className = "";
+        }
+        if (!page) {
+          var url = window.location.href;
+          url = url.split("#")[1];
+          console.log(url);
+          if (url == undefined || url == null) {
+            document.getElementById("main").innerHTML = pages_html["Home"]
+            document.getElementById("Home").className = "active";
+          } else {
+            document.getElementById(url.split(",")[0]).className = "active";
+            document.getElementById("main").innerHTML = pages_html[url.split(",")[0]];
+          }
+        } else {
+          document.getElementById(page).className = "active";
+          document.getElementById("main").innerHTML = pages_html[page];
+        }
+      }
+      update();
+    </script>
+  </div>
+</body>
