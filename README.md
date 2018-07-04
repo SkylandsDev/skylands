@@ -1,3 +1,3 @@
 # skylands
-Skylands: WOrlds from above website
+Skylands: Worlds from Above website
 SkylandsDev.github.io/skylands
