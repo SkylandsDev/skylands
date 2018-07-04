@@ -56,8 +56,9 @@ let page_news = page_base + `
 <div>
 <div class=imgframe>
 <img class=imgleft src="logo.png">
-</div>
-<p class=hometext></p>
+</div class=hometext>
+<h2>Wednesday, 4 of July, 2018:</h2>
+<p>Development on Skylands: Worlds from Above - JavaScript edition have now officialy begun!</p>
 </div>
 
 </body>
