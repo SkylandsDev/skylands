@@ -100,7 +100,7 @@ if (window.mobileAndTabletcheck()) {
       }
       function update(page) {
         var pages = ["Home", "News", "Contact", "About", "Members"]
-        var pages_html = {"Home": page_home, "News": "<h1>News</h1>", "Contact": "<h1>Contacts</h1>", "About": "<h1>About</h1>", "Members": page_members}
+        var pages_html = {"Home": page_home, "News": page_news, "Contact": page_contact, "About": page_about, "Members": page_members}
         for (var i = 0; i < pages.length; i++) {
           document.getElementById(pages[i]).className = "";
         }
