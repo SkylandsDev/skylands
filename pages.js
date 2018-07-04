@@ -37,6 +37,32 @@ let page_about = page_base + `
 </body>
 </html>
 `;
+let page_contact = page_base + `
+<h1 class=head1>Contact</h1>
+</div>
+<div>
+<div class=imgframe>
+<img class=imgleft src="logo.png">
+</div>
+<p class=hometext></p>
+</div>
+
+</body>
+</html>
+`;
+let page_news = page_base + `
+<h1 class=head1>News</h1>
+</div>
+<div>
+<div class=imgframe>
+<img class=imgleft src="logo.png">
+</div>
+<p class=hometext></p>
+</div>
+
+</body>
+</html>
+`;
 let page_members = page_base + `
 <h1 class=head1>Members</h1>
 </div>
